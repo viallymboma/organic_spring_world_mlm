@@ -16,19 +16,22 @@ import {
 import Login from './pages/Login';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
+import NavigationBar from './components/BigScreenNavigationBar';
+import SmallScreenNavigationBar from './components/SmallScreenNavigationBar';
+import BigScreenNavigationBar from './components/BigScreenNavigationBar';
+import FooterContainer from './components/Footer';
+import BigScreenAsideBar from './components/dashboardComponents/BigScreenAsideBar';
+import SmallScreenAsideBar from './components/dashboardComponents/SmallScreenAsideBar';
 
 function App() {
   return (
     <div className='BaseTemplate'>
 
-      <div className='BigScreenNavigationBar'>
-        BigScreen Navbar
-      </div>
-      <div className='SmallScreenNavigationBar'>
-        Small Screen Navbar
-      </div>
+      {/* These sections are static throughout the entire website */}
 
       <BrowserRouter>
+        <BigScreenNavigationBar />      
+        <SmallScreenNavigationBar />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -43,16 +46,13 @@ function App() {
 
       </BrowserRouter>
 
-      <div className='BigScreenAsideBar'>
-        Big screen aside
-      </div>
-      <div className='SmallScreenAsideBar'>
-        Small screen Aside
-      </div>
+      {/* These sections are static throughout the entire back office after login to account */}
+      <BigScreenAsideBar />
+      <SmallScreenAsideBar />
 
-      <footer className='FooterContainer'>
-        Footer
-      </footer>
+      {/* This section is static throughout the entire website */}
+      <FooterContainer />
+      
 
     </div>
   );
@@ -64,11 +64,35 @@ export default App;
 
 
 
-{/* <nav className='NavigationBar'>
-        <div className='BigScreenNavigationBar'>
-          BigScreen Navbar
-        </div>
-        <div className='SmallScreenNavigationBar'>
-          Small Screen Navbar
-        </div>
-      </nav> */}
+// {/* <nav className='NavigationBar'>
+//         <div className='BigScreenNavigationBar'>
+//           BigScreen Navbar
+//         </div>
+//         <div className='SmallScreenNavigationBar'>
+//           Small Screen Navbar
+//         </div>
+//       </nav> */}
+
+
+  // {/* <div className='BigScreenNavigationBar'>
+  //       BigScreen Navbar
+  //     </div> */}
+
+
+      // {/* <div className='SmallScreenNavigationBar'>
+      //   Small Screen Navbar
+      // </div> */}
+
+
+      // {/* <footer className='FooterContainer'>
+      //   Footer
+      // </footer> */}
+
+
+      // <div className='BigScreenAsideBar'>
+      //   Big screen aside
+      // </div>
+
+      // {/* <div className='SmallScreenAsideBar'>
+      //   Small screen Aside
+      // </div> */}
