@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logo_gold from '../assets/images/logo/logo_basic.png';
 import logo from '../assets/images/logo/logo_white.png';
-import { HomeOutline, PersonCircle, Person, ChevronDown, SettingsOutline, AddCircleOutline, PersonAddOutline, LogInOutline, LogOutOutline } from 'react-ionicons'
+import { AppsOutline, ListOutline, HomeOutline, CallOutline, PhonePortraitOutline, MailOutline, ChatbubbleOutline, PersonCircle, Person, ChevronDown, SettingsOutline, AddCircleOutline, PersonAddOutline, LogInOutline, LogOutOutline } from 'react-ionicons'
 import { Link, Router } from 'react-router-dom';
 
 import styled from 'styled-components';
 
 const BigScreenNavigationBar = () => {
-
+  
+  
   const navLinks = [
     {
       Icon: HomeOutline,
@@ -18,7 +19,7 @@ const BigScreenNavigationBar = () => {
     },
     {
       Icon: SettingsOutline,
-      color: 'rgb(224, 190, 37)',
+      color: 'green',
       IconName: 'About',
       link: "about/"
     },
@@ -26,25 +27,21 @@ const BigScreenNavigationBar = () => {
     //   Icon: AddCircleOutline,
     //   // color: '#D7BE69',
     //   // df2fff
-    //   color: 'rgb(224, 190, 37)',
+    //   color: 'green',
     //   IconName: 'CompPlan'
     // },
     {
       Icon: LogInOutline,
-      color: 'rgb(224, 190, 37)',
+      color: 'green',
       IconName: 'Login',
       link: "login/"
     },
     {
       Icon: Person,
-      color: 'rgb(224, 190, 37)',
+      color: 'green',
       IconName: 'Signup',
       link: "registration/"
-    },
-    // {
-    //   Icon: LogOutOutline,
-    //   color: ''
-    // }
+    }
   ]
 
   const [active, setActive] = useState(0);
@@ -64,16 +61,22 @@ const BigScreenNavigationBar = () => {
   `
 
   const listenSrollEvent = (event) => {
-    if (window.scrollY < 100) {
+    // if (window.scrollY < 100) {
+    //   return setHeaderOnScroll("BigScreenNavigationBar")
+    // } else if (window.scrollY > 100) {
+    //   return setHeaderOnScroll("BigScreenNavigationBarScroll")
+    // }
+
+    if (window.pageYOffset < 100) {
       return setHeaderOnScroll("BigScreenNavigationBar")
-    } else if (window.scrollY > 100) {
+    } else if (window.pageYOffset > 100) {
       return setHeaderOnScroll("BigScreenNavigationBarScroll")
     }
   }
 
-  useEffect (() => {
-    highlighterRef.current.style.left = `${(LINK_WIDTH * active) + (LINK_WIDTH / 50)}px`;
-  }, [active])
+  // useEffect (() => {
+  //   highlighterRef.current.style.left = `${(LINK_WIDTH * active) + (LINK_WIDTH / 50)}px`;
+  // }, [active])
 
   useEffect (() => {
     window.addEventListener('scroll', listenSrollEvent);
@@ -85,39 +88,62 @@ const BigScreenNavigationBar = () => {
   return (
     <nav className={headerOnScroll}>
         {/* Big Screen Navigation Bar */}
+        {
+          headerOnScroll === "BigScreenNavigationBar" ? 
+          <div className="topestDiv">
+            <div className="contactPhone twog">
+              <CallOutline color="white" />
+              <div className="callText"><h3>0544249377</h3></div>
+            </div>
+            <div className="contactEmail twog">
+              <MailOutline color="white" />
+              <div className="callText"><h3>info@organicspringworld.com</h3></div>
+            </div>
+          </div> : null
+        }
         <div className="overAllContainer">
           <div className="logoContainer">
             {/* Conditionally putting corresponding logo */}
             {
-              window.pageYOffset > 100 ? <img src={logo} alt="logo" /> : <img src={logo_gold} alt="logo" />
+              window.pageYOffset > 100 ? <Link className='Linky' to="/"><img src={logo} alt="logo" /></Link> : <Link className='Linky' to="/"><img src={logo_gold} alt="logo" /></Link>
             }
           </div>
           <div className="middleContainer">
-            
+
             <ul>
               {
                 navLinks.map(({ Icon, IconName, link }, i) => {
                   return (
-                    <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className={active === i ? 'active' : ""} onClick={() => setActive(i)} key={i}>
-                      <Link to={link}>
-                      <div color="#fff" width="40px" height="30px" className="icon" >{IconName}</div>
-                      {/* <Icon color="#fff" width="40px" height="30px" className="icon" >{IconName}</Icon> */}
-                      </Link>
-                    </li>
+                    <Link className='Linky' to={link}>
+                      <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className={active === i ? 'active' : ""} onClick={() => setActive(i)} key={i}>
+                        <div color="#fff" width="40px" height="30px" className="icon" >{IconName}</div>
+                        {/* <Icon color="#fff" width="40px" height="30px" className="icon" >{IconName}</Icon> */}
+                      </li>
+                    </Link>
                   )
                 })
               }
-              <StyledHighlighter color={navLinks[active].color} ref={ highlighterRef } id="highlighter" />
+              {/* <StyledHighlighter color={navLinks[active].color} ref={ highlighterRef } id="highlighter" /> */}
             </ul>
           </div>
 
           <div className="userContainer">
             <Link to="login/">
-              <LogInOutline color={window.pageYOffset > 100 ? "white" : "black" } width="40px" height="30px" className="icon" ></LogInOutline>
+              <LogInOutline color={window.pageYOffset > 100 ? "white" : "#b68d06" } width="40px" height="30px" className="icon" ></LogInOutline>
             </Link>
             <Link to="registration/">
-              <Person color={window.pageYOffset > 100 ? "white" : "black" } width="40px" height="30px" className="icon" ></Person>
+              <Person color={window.pageYOffset > 100 ? "white" : "#b68d06" } width="40px" height="30px" className="icon" ></Person>
             </Link>
+            {/* <AppsOutline color="black" /> */}
+            {/* <ListOutline color="black" /> */}
+          </div>
+
+          <div className="lastDiv">
+            {
+              window.pageYOffset > 100 ? <AppsOutline color="white" /> : <AppsOutline color="rgb(182, 141, 6)" />
+            }
+            
+            {/* <ListOutline color="black" /> */}
           </div>
         </div>
     </nav>

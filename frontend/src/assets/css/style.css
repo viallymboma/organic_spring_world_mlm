@@ -1,5 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap");
+.ButtonMainGreen {
+  background-color: #af9108;
+  background-color: green;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 20%, transparent 100%);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  transition: .3s all ease-in-out;
+  border-radius: .5rem; }
+  .ButtonMainGreen:hover {
+    transform: scale(1.1);
+    background-color: #af9108;
+    background-image: none;
+    color: white; }
+
+.ButtonMainGold {
+  background-color: #af9108;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 20%, transparent 100%);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  transition: .3s all ease-in-out;
+  border-radius: .5rem; }
+  .ButtonMainGold:hover {
+    transform: scale(1.1);
+    background-color: #af9108;
+    background-image: none;
+    color: white; }
+
 .BaseTemplate {
   position: relative;
   height: 100%;
@@ -7,8 +42,32 @@
   .BaseTemplate .BigScreenNavigationBar {
     background-color: white;
     width: 100%;
-    transition: ease-in-out all .3s;
-    height: 100px; }
+    z-index: 20;
+    transition: ease-in-out all .3s; }
+    .BaseTemplate .BigScreenNavigationBar .topestDiv {
+      height: 40px;
+      color: white;
+      padding: 0 3rem;
+      background-color: black;
+      font-size: .8rem;
+      display: grid;
+      align-items: center;
+      gap: .4rem;
+      grid-template-columns: repeat(2, 1fr) 15fr;
+      cursor: pointer; }
+      @media (max-width: 1400px) {
+        .BaseTemplate .BigScreenNavigationBar .topestDiv {
+          display: none; } }
+      .BaseTemplate .BigScreenNavigationBar .topestDiv h3 {
+        color: #b68d06; }
+      .BaseTemplate .BigScreenNavigationBar .topestDiv .contactEmail {
+        border-left: solid 2px #b68d06;
+        padding-left: 1.3rem; }
+      .BaseTemplate .BigScreenNavigationBar .topestDiv .twog {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr) 15fr;
+        gap: 1rem; }
     .BaseTemplate .BigScreenNavigationBar .overAllContainer {
       display: grid;
       padding: 0 3rem;
@@ -16,41 +75,57 @@
       align-items: center;
       justify-content: center;
       height: 100%; }
+      @media (max-width: 1400px) {
+        .BaseTemplate .BigScreenNavigationBar .overAllContainer {
+          grid-template-columns: repeat(2, 1fr); } }
       .BaseTemplate .BigScreenNavigationBar .overAllContainer .logoContainer {
         width: 100px;
         display: flex;
         align-items: center;
-        justify-content: flex-start; }
+        justify-content: flex-start;
+        cursor: pointer; }
         .BaseTemplate .BigScreenNavigationBar .overAllContainer .logoContainer img {
           width: 100%; }
+          @media (max-width: 573px) {
+            .BaseTemplate .BigScreenNavigationBar .overAllContainer .logoContainer img {
+              width: 80%; } }
       .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer {
         display: flex;
         align-items: center;
         justify-content: center; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer {
+            display: none; } }
         .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul {
           display: flex;
           position: relative;
           justify-content: center;
           align-items: center;
-          border-radius: 10px;
-          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25); }
-          .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul li {
-            list-style: none;
-            position: relative;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
+          border-radius: 10px; }
+          .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky {
+            display: grid;
             justify-content: center;
-            padding: 20px 30px;
-            z-index: 2;
-            cursor: pointer;
-            backdrop-filter: blur(15px); }
-            .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul li:hover .icon, .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul li.active .icon {
-              opacity: 1; }
-            .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul li .icon {
-              opacity: .25;
-              color: black;
-              transition: .3s all ease-in-out; }
+            align-items: center; }
+            .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky li {
+              list-style: none;
+              position: relative;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 30px;
+              z-index: 2;
+              cursor: pointer;
+              transition: all .3 ease-in-out; }
+              .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky li:hover, .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky li.active {
+                border-bottom: solid 5px #b68d06; }
+                .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky li:hover .icon, .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky li.active .icon {
+                  opacity: 1; }
+              .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul .Linky li .icon {
+                opacity: .7;
+                color: black;
+                color: #b68d06;
+                transition: .3s all ease-in-out; }
           .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul #highlighter {
             position: absolute;
             top: 0;
@@ -71,17 +146,30 @@
         justify-content: flex-end;
         color: black;
         gap: 2rem; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .BigScreenNavigationBar .overAllContainer .userContainer {
+            display: none; } }
+      .BaseTemplate .BigScreenNavigationBar .overAllContainer .lastDiv {
+        display: none;
+        cursor: pointer; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .BigScreenNavigationBar .overAllContainer .lastDiv {
+            display: grid;
+            justify-content: flex-end; } }
   .BaseTemplate .BigScreenNavigationBarScroll {
     background-color: white;
     width: 100%;
     transition: ease-in-out all .3s;
-    height: 100px;
+    height: 60px;
     position: sticky;
     position: fixed;
-    top: 0; }
+    top: 0;
+    z-index: 20; }
     .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer {
       background-color: green;
       background-color: #48aa48;
+      background-color: #837004;
+      background-color: #b68d06;
       padding: 0 3rem;
       display: grid;
       grid-template-columns: 4fr 15fr 4fr;
@@ -89,6 +177,9 @@
       align-items: center;
       justify-content: center;
       height: 100%; }
+      @media (max-width: 1400px) {
+        .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer {
+          grid-template-columns: repeat(2, 1fr); } }
       .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .logoContainer {
         width: 100px;
         display: flex;
@@ -97,19 +188,22 @@
         .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .logoContainer img {
           width: 100%;
           transition: all .3s ease-in-out; }
-          .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .logoContainer img:hover {
-            transform: skewy(20deg); }
+          @media (max-width: 573px) {
+            .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .logoContainer img {
+              width: 80%; } }
       .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer {
         display: flex;
         align-items: center;
         justify-content: center; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer {
+            display: none; } }
         .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul {
           display: flex;
           position: relative;
           justify-content: center;
           align-items: center;
-          border-radius: 10px;
-          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25); }
+          border-radius: 10px; }
           .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li {
             list-style: none;
             position: relative;
@@ -119,12 +213,13 @@
             justify-content: center;
             padding: 20px 30px;
             z-index: 2;
-            cursor: pointer;
-            backdrop-filter: blur(15px); }
-            .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li:hover .icon, .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li.active .icon {
-              opacity: 1; }
+            cursor: pointer; }
+            .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li:hover, .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li.active {
+              border-bottom: solid 5px white; }
+              .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li:hover .icon, .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li.active .icon {
+                opacity: 1; }
             .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul li .icon {
-              opacity: .25;
+              opacity: .7;
               color: white;
               transition: .3s all ease-in-out; }
           .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul #highlighter {
@@ -147,6 +242,16 @@
         justify-content: flex-end;
         color: white;
         gap: 2rem; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .userContainer {
+            display: none; } }
+      .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .lastDiv {
+        display: none;
+        cursor: pointer; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .lastDiv {
+            display: grid;
+            justify-content: flex-end; } }
   .BaseTemplate .SmallScreenNavigationBar {
     position: absolute;
     transform: translateX(-100%);
@@ -166,12 +271,23 @@
     position: relative;
     width: 100%;
     display: grid;
-    justify-content: center; }
+    justify-content: center;
+    grid-template-rows: minmax(min-content, max-content); }
     .BaseTemplate .HomePageContent .HeroSectionContent {
-      background-color: aqua;
-      padding: 0 3rem;
-      height: 500px;
-      position: relative; }
+      background-image: url(../images/hero_section_img/hero_.png);
+      object-fit: cover;
+      background-position: center;
+      background-size: cover;
+      height: 800px;
+      position: relative;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: 1fr;
+      align-items: center; }
+      @media (max-width: 1400px) {
+        .BaseTemplate .HomePageContent .HeroSectionContent {
+          height: 100%; } }
       .BaseTemplate .HomePageContent .HeroSectionContent .arrow_left_div {
         position: absolute;
         width: 40px;
@@ -184,7 +300,12 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        cursor: pointer; }
+        cursor: pointer;
+        opacity: .4;
+        transition: all .3s ease-in-out;
+        z-index: 2; }
+        .BaseTemplate .HomePageContent .HeroSectionContent .arrow_left_div:hover {
+          opacity: 1; }
       .BaseTemplate .HomePageContent .HeroSectionContent .arrow_right_div {
         position: absolute;
         width: 40px;
@@ -199,11 +320,152 @@
         align-items: center;
         cursor: pointer;
         opacity: .4;
-        transition: all .3s ease-i; }
+        transition: all .3s ease-in-out;
+        z-index: 2; }
         .BaseTemplate .HomePageContent .HeroSectionContent .arrow_right_div:hover {
           opacity: 1; }
+      .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index: 1; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle {
+            margin: 5rem 0; } }
+        .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          transition: all .3s ease-in-out;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3rem; }
+          @media (max-width: 1400px) {
+            .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active {
+              justify-content: center;
+              grid-template-columns: 1fr; } }
+          .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up {
+            display: grid;
+            gap: 1rem;
+            margin-left: 10rem; }
+            @media (max-width: 1400px) {
+              .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up {
+                margin: 0 auto;
+                padding-left: 2rem;
+                padding-right: 2rem; } }
+            .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .small_title {
+              text-align: left;
+              font-size: 5rem; }
+              @media (max-width: 1400px) {
+                .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .small_title {
+                  font-size: 1.5rem; } }
+              @media (max-width: 486px) {
+                .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .small_title {
+                  margin-bottom: 1rem; } }
+            .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h3_style .slide_text {
+              width: 100%;
+              height: 100%;
+              color: white;
+              font-size: 2rem;
+              text-align: left;
+              z-index: 10; }
+              @media (max-width: 1400px) {
+                .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h3_style .slide_text {
+                  font-size: 1.5rem; } }
+              @media (max-width: 486px) {
+                .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h3_style .slide_text {
+                  margin-top: 2rem; } }
+            .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style {
+              display: grid;
+              align-items: center; }
+              .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style .slide_title {
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-size: 10px;
+                text-align: left;
+                font-size: 5rem;
+                top: 40%;
+                z-index: 10; }
+                @media (max-width: 1400px) {
+                  .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style .slide_title {
+                    font-size: 2rem; } }
+          .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .imgDiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto; }
+            .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .imgDiv .intermediary {
+              width: 100%;
+              display: flex;
+              justify-content: center; }
+              .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .imgDiv .intermediary .slide_image {
+                width: 30%;
+                height: 30%;
+                object-fit: cover; }
+                @media (max-width: 1400px) {
+                  .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .imgDiv .intermediary .slide_image {
+                    width: 20%;
+                    height: 20%; } }
+        .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .inactive {
+          display: none; }
+        .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .slides {
+          height: 100%;
+          width: 100%;
+          position: relative; }
+      .BaseTemplate .HomePageContent .HeroSectionContent .DotsStyle {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        top: 85%;
+        justify-content: center;
+        z-index: 15; }
+        .BaseTemplate .HomePageContent .HeroSectionContent .DotsStyle .dot {
+          cursor: pointer;
+          height: 1.5rem;
+          width: 1.5rem;
+          margin: 0px 3px;
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 50%;
+          display: inline-block; }
+        .BaseTemplate .HomePageContent .HeroSectionContent .DotsStyle .active_dot {
+          background-color: rgba(255, 255, 255, 0.5); }
     .BaseTemplate .HomePageContent .AboutSectionContent {
-      background-color: antiquewhite; }
+      z-index: 15;
+      height: 800px;
+      padding: 2rem 3rem;
+      position: relative;
+      display: grid;
+      justify-content: center;
+      grid-template-rows: minmax(min-content, max-content); }
+      .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        gap: 2rem; }
+        .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy .certifiedByHeaderDiv h1 {
+          color: #b68d06; }
+        .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy .StandardCompanies {
+          width: 100%;
+          gap: 3rem;
+          display: grid;
+          justify-content: center;
+          grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); }
+          .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy .StandardCompanies .certImgDiv {
+            width: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: .3;
+            transition: .3s all ease-in-out; }
+            .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy .StandardCompanies .certImgDiv:hover {
+              opacity: 1;
+              transform: scale(1.05);
+              box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25); }
+            .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy .StandardCompanies .certImgDiv img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%; }
     .BaseTemplate .HomePageContent .ProductsSectionContent {
       background-color: azure; }
     .BaseTemplate .HomePageContent .PackagesSectionContent {
@@ -230,7 +492,100 @@
     background-color: wheat; }
   .BaseTemplate .FooterContainer {
     color: white;
-    background-color: black; }
+    background-color: black;
+    border-top: solid 5rem #b68d06;
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-items: center; }
+    .BaseTemplate .FooterContainer .logo {
+      width: 100px; }
+      .BaseTemplate .FooterContainer .logo img {
+        width: 100%; }
+    .BaseTemplate .FooterContainer .title {
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #b68d06;
+      transition: .3s all ease-in-out; }
+      .BaseTemplate .FooterContainer .title:hover {
+        border-bottom: 1px solid black;
+        border-bottom: 1px solid #b68d06; }
+    .BaseTemplate .FooterContainer .FooterHeaderContainer {
+      display: grid;
+      justify-content: center;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid black;
+      border-bottom: 1px solid #b68d06;
+      transition: .3s all ease-in-out; }
+      .BaseTemplate .FooterContainer .FooterHeaderContainer:hover {
+        border-bottom: 1px solid #b68d06; }
+    .BaseTemplate .FooterContainer .FooterBodyContainer {
+      padding: 2rem 0;
+      border: solid 5px #fcde7d;
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      gap: 2rem;
+      width: 80%;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .BaseTemplate .FooterContainer .FooterBodyContainer .GetInTouch {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .BaseTemplate .FooterContainer .FooterBodyContainer .GetInTouch .contactDetails {
+          display: grid;
+          gap: 1rem; }
+          .BaseTemplate .FooterContainer .FooterBodyContainer .GetInTouch .contactDetails .add_ {
+            display: grid;
+            grid-template-columns: 3fr 20fr; }
+      .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs {
+        padding: 1rem;
+        display: grid;
+        justify-items: center; }
+        .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form {
+          display: grid;
+          justify-items: center;
+          gap: 1rem; }
+          .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #email_id {
+            width: 88%;
+            height: 40px; }
+          .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #text_id {
+            width: 88%;
+            height: 60px; }
+          .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #email_id, .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #text_id {
+            cursor: pointer;
+            backdrop-filter: blur(15px);
+            outline-style: none;
+            transition: .3s ease all;
+            border: solid 5px #000000;
+            padding: 0 1rem;
+            border-radius: .1rem; }
+            .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #email_id:hover, .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #text_id:hover {
+              border: solid 5px #fcde7d; }
+            .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #email_id:focus, .BaseTemplate .FooterContainer .FooterBodyContainer .ContactUs .contactUsbd form #text_id:focus {
+              border: solid 5px #b68d06; }
+      .BaseTemplate .FooterContainer .FooterBodyContainer .Explore {
+        padding: 1rem; }
+        .BaseTemplate .FooterContainer .FooterBodyContainer .Explore .exploration .l_in_k {
+          display: grid;
+          grid-template-columns: 2fr 10fr; }
+          .BaseTemplate .FooterContainer .FooterBodyContainer .Explore .exploration .l_in_k .link__ {
+            color: #b4adad;
+            transition: .3s all ease-in-out;
+            border-bottom: solid 1px black;
+            width: 60px; }
+            .BaseTemplate .FooterContainer .FooterBodyContainer .Explore .exploration .l_in_k .link__:hover {
+              color: white;
+              border-bottom: solid 1px #b68d06; }
+    .BaseTemplate .FooterContainer .SocialMedia {
+      display: grid;
+      justify-content: center;
+      width: 80%;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+      .BaseTemplate .FooterContainer .SocialMedia .allIcon {
+        display: grid;
+        justify-content: center; }
 
 *,
 *::after,

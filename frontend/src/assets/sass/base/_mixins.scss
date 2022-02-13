@@ -1,0 +1,307 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// MEDIA QUERY MANAGER
+
+@mixin how-it-works-respond-sub {
+    @media (max-width: 110rem) {
+        @content
+    }
+};
+
+@mixin how-it-works-respond {
+    @media (max-width: 100rem) {
+        @content
+    }
+};
+
+@mixin how-it-works-main {
+    @media (max-width: 90rem) {
+        @content
+    }
+};
+
+@mixin how-it-works-side-text {
+    @media (max-width: 60rem) {
+        @content
+    }
+};
+
+@mixin upper-footer {
+    @media (max-width: 60rem) {
+        @content
+    }
+};
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == toobig {
+        @media (max-width: 1705px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == toobig2 {
+        @media (max-width: 1530px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == biggest_1 {
+        @media (max-width: 1400px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest_lil {
+        @media (max-width: 1360px) {
+            @content
+        }
+    };
+    
+    // Mainly For a propo section
+    @if $breakpoint == biggest {
+        @media (max-width: 1215px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest1 {
+        @media (max-width: 1090px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == biggest970 {
+        @media (max-width: 1020px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == biggest900 {
+        @media (max-width: 900px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == footer_foot {
+        @media (max-width: 887px) {
+            @content
+        }
+    };
+
+    // For final footer responsiveness
+    @if $breakpoint == footer1 {
+        @media (max-width: 880px) {
+            @content
+        }
+    };
+
+    // Mainly for become expert section
+    @if $breakpoint == biggest1_a {
+        @media (max-width: 830px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest2 {
+        @media (max-width: 805px) {
+            @content
+        }
+    };
+
+    // Become expert
+    @if $breakpoint == biggest3_1 {
+        @media (max-width: 758px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == service_el {
+        @media (max-width: 686px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest3 {
+        @media (max-width: 630px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest4 {
+        @media (max-width: 573px) {
+            @content
+        }
+    };
+
+    // Width of the text in become expert
+    @if $breakpoint == biggest4-2 {
+        @media (max-width: 486px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest4-1 {
+        @media (max-width: 468px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest5 {
+        @media (max-width: 430px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
+    @if $breakpoint == biggest6 {
+        @media (max-width: 391px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == somewhere {
+        @media (max-width: 375px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == biggest7 {
+        @media (max-width: 354px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == biggest8 {
+        @media (max-width: 324px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == reservation {
+        @media (max-width: 304px) {
+            @content
+        }
+    };
+    
+    @if $breakpoint == smaller-phone {
+        @media (max-width: 25.5rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == zero4_plus_upper {
+        @media (max-width: 470px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == zero4_plus {
+        @media (max-width: 350px) {
+            @content
+        }
+    };
+    
+    @if $breakpoint == phone {
+        @media (max-width: 35.5rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 47.25rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == smaller-landscape {
+        @media (max-width: 56.25rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == smallest-landscape {
+        @media (max-width: 767px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == big-tab-pot {
+        @media (max-width: 500px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == big-tab-pot1 {
+        @media (max-width: 518px) {
+            @content
+        }
+    };
+    
+    @if $breakpoint == smaller-tab-pot {
+        @media (max-width: 408px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == tab-landscape {
+        @media (max-width: 65rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == big-desktop {
+        @media (max-width: 90rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == big-desktop1 {
+        @media (max-width: 987px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == line-up-grid {
+        @media (max-width: 900px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == smaller-desktop {
+        @media (max-width: 73rem) {
+            @content
+        }
+    };
+
+    @if $breakpoint == bigger-desktop {
+        @media (max-width: 100rem) {
+            @content
+        }
+    }
+}
+
+
+

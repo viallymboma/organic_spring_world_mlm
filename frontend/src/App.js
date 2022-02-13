@@ -23,6 +23,7 @@ import FooterContainer from './components/Footer';
 import BigScreenAsideBar from './components/dashboardComponents/BigScreenAsideBar';
 import SmallScreenAsideBar from './components/dashboardComponents/SmallScreenAsideBar';
 
+
 function App() {
   return (
     <div className='BaseTemplate'>
@@ -44,14 +45,14 @@ function App() {
           <Route path="login/" element={<Login />} />
         </Routes>
 
+        {/* These sections are static throughout the entire back office after login to account */}
+        <BigScreenAsideBar />
+        <SmallScreenAsideBar />
+
+        {/* This section is static throughout the entire website */}
+        <FooterContainer />
       </BrowserRouter>
 
-      {/* These sections are static throughout the entire back office after login to account */}
-      <BigScreenAsideBar />
-      <SmallScreenAsideBar />
-
-      {/* This section is static throughout the entire website */}
-      <FooterContainer />
       
 
     </div>
