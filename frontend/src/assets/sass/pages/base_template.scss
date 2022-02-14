@@ -4,7 +4,8 @@
     // background-color: yellow;
     // background-color: green!important;
     position: relative;
-    height: 100%;
+    // height: 100%;
+    display: grid;
     width: 100%;
 
     // These navigations are for the site globally
@@ -65,7 +66,7 @@
             // grid-template-columns: 1fr 15fr;
             align-items: center;
             justify-content: center;
-            height: 100%;
+            // height: 100%;
 
             @include respond (biggest_1) {
                 grid-template-columns: repeat(2, 1fr);
@@ -714,10 +715,12 @@
             height: 800px;
             padding: 2rem 3rem;
             position: relative;
+            
 
             display: grid;
             justify-content: center;
-            grid-template-rows: minmax(min-content, max-content);
+            justify-items: center;
+            grid-template-columns: minmax(min-content, max-content);
 
             .CertifiedBy {
                 // background-color: #e4cb79;
@@ -775,6 +778,100 @@
                     }
                 }
             }
+
+            .aboutUsContent {
+                display: grid;
+                // width: 100%;
+                // width: 80%;
+                width: 1000px;
+                justify-content: center;
+                justify-items: center;
+                backdrop-filter: blur(5px);
+                // background-color: #0c2758;
+                background-color: rgba(175, 135, 5, 0.5);
+                border-radius: 1.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+                gap: 1.5rem;
+                padding: 5rem;
+
+                @include respond (biggest_1) {
+                    display: none;
+                }
+
+                .specialCard {
+                    display: grid;
+                    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+                    padding: 1rem;
+                    // background-color: #b68d06;
+                    background-color: rgba(255, 255, 255, .1);
+                    overflow: hidden;
+                    border-top: 1px solid rgba(255, 255, 255, .5);
+                    border-left: 1px solid rgba(255, 255, 255, .5);
+                    backdrop-filter: blur(5px);
+                    cursor: pointer;
+                    border-radius: 1rem;
+
+                    .picAndnumber {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        .imgDiv {
+                            display: grid;
+                            width: 70px;
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .number {
+                            font-size: 3.5rem;
+                            color: rgba(255, 255, 255, .1);
+                            pointer-events: none;
+                        }
+
+                        // .imgDiv {
+                        //     display: grid;
+                        //     width: 70px;
+    
+                        //     img {
+                        //         width: 100%;
+                        //     }
+                        // }
+                    }
+
+                    h3 {
+                        color: white;
+                        font-size: 2rem;
+                    }
+
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .5;
+                background: linear-gradient(rgb(177, 123, 6), rgb(243, 181, 9));
+                clip-path: circle(30% at right 70%);
+                z-index: -5;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .2;
+                background: linear-gradient(rgb(177, 123, 6), rgb(243, 181, 9));
+                clip-path: circle(20% at 10% 10%);
+                z-index: -5;
+            }
         }
 
         .ProductsSectionContent {
@@ -831,8 +928,8 @@
     .FooterContainer {
         color: white;
         background-color: black;
-        border-top: solid 5rem #b68d06;
-        // background-color: green;
+        border-top: solid 3rem #b68d06;
+        // background-color: rgb(0, 94, 0);
 
         display: grid;
         gap: 1.5rem;
@@ -883,6 +980,10 @@
             padding: 2rem 0;
             // border-radius: 1rem;
             border: solid 5px #fcde7d;
+
+            @include respond (biggest7) {
+                border: none;
+            }
 
             display: grid;
             justify-content: center;
@@ -1006,25 +1107,33 @@
 
             .socFB {
                 // width: 100px;
+                .LogoFacebook {
+                    cursor: pointer;
+                }
             }
-
+            
             .socIG {
+                .LogoInstagram {
+                    cursor: pointer;
+                }
                 
             }
 
             .socGL {
-                // background-color: black;
-                // display: grid;
-                // justify-content: center;
-                // width: 200px;
-                // .LogoGoogle {
-                //     font-size: 5rem;
-                // }
+
+                .LogoGoogle {
+                    cursor: pointer;
+                    // font-size: 2rem;
+                    font-weight: 600;
+                }
             }
         }
         
         .FooterBottomContainer {
             // background-color: #b68d06;
+            padding: 1rem 2rem;
+            background-color: #2e2e2e;
+            // border-top: solid 5rem #b68d06;
         }
     }
 

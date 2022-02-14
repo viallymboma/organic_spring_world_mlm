@@ -112,7 +112,7 @@ const FooterContainer = () => {
         </div>
 
         <div className="FooterBottomContainer">
-          © 2022 Creative | Made With Love By <span style={{ color: "#b68d06"  }}>OWS Software Team </span>
+          © 2022 Creative | Made With Love By <span style={{ color: "#b68d06"  }}>OSW Software Team </span>
         </div>
     </div>
   );

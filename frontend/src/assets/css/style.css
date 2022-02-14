@@ -37,7 +37,7 @@
 
 .BaseTemplate {
   position: relative;
-  height: 100%;
+  display: grid;
   width: 100%; }
   .BaseTemplate .BigScreenNavigationBar {
     background-color: white;
@@ -73,8 +73,7 @@
       padding: 0 3rem;
       grid-template-columns: 4fr 15fr 4fr;
       align-items: center;
-      justify-content: center;
-      height: 100%; }
+      justify-content: center; }
       @media (max-width: 1400px) {
         .BaseTemplate .BigScreenNavigationBar .overAllContainer {
           grid-template-columns: repeat(2, 1fr); } }
@@ -438,7 +437,8 @@
       position: relative;
       display: grid;
       justify-content: center;
-      grid-template-rows: minmax(min-content, max-content); }
+      justify-items: center;
+      grid-template-columns: minmax(min-content, max-content); }
       .BaseTemplate .HomePageContent .AboutSectionContent .CertifiedBy {
         display: grid;
         justify-content: center;
@@ -466,6 +466,68 @@
               width: 100%;
               height: 100%;
               border-radius: 50%; }
+      .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent {
+        display: grid;
+        width: 1000px;
+        justify-content: center;
+        justify-items: center;
+        backdrop-filter: blur(5px);
+        background-color: rgba(175, 135, 5, 0.5);
+        border-radius: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+        gap: 1.5rem;
+        padding: 5rem; }
+        @media (max-width: 1400px) {
+          .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent {
+            display: none; } }
+        .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent .specialCard {
+          display: grid;
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          padding: 1rem;
+          background-color: rgba(255, 255, 255, 0.1);
+          overflow: hidden;
+          border-top: 1px solid rgba(255, 255, 255, 0.5);
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
+          cursor: pointer;
+          border-radius: 1rem; }
+          .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent .specialCard .picAndnumber {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); }
+            .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent .specialCard .picAndnumber .imgDiv {
+              display: grid;
+              width: 70px; }
+              .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent .specialCard .picAndnumber .imgDiv img {
+                width: 100%; }
+            .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent .specialCard .picAndnumber .number {
+              font-size: 3.5rem;
+              color: rgba(255, 255, 255, 0.1);
+              pointer-events: none; }
+          .BaseTemplate .HomePageContent .AboutSectionContent .aboutUsContent .specialCard h3 {
+            color: white;
+            font-size: 2rem; }
+      .BaseTemplate .HomePageContent .AboutSectionContent::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        background: linear-gradient(#b17b06, #f3b509);
+        clip-path: circle(30% at right 70%);
+        z-index: -5; }
+      .BaseTemplate .HomePageContent .AboutSectionContent::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .2;
+        background: linear-gradient(#b17b06, #f3b509);
+        clip-path: circle(20% at 10% 10%);
+        z-index: -5; }
     .BaseTemplate .HomePageContent .ProductsSectionContent {
       background-color: azure; }
     .BaseTemplate .HomePageContent .PackagesSectionContent {
@@ -493,7 +555,7 @@
   .BaseTemplate .FooterContainer {
     color: white;
     background-color: black;
-    border-top: solid 5rem #b68d06;
+    border-top: solid 3rem #b68d06;
     display: grid;
     gap: 1.5rem;
     padding: 2rem;
@@ -528,6 +590,9 @@
       gap: 2rem;
       width: 80%;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      @media (max-width: 354px) {
+        .BaseTemplate .FooterContainer .FooterBodyContainer {
+          border: none; } }
       .BaseTemplate .FooterContainer .FooterBodyContainer .GetInTouch {
         padding: 1rem;
         display: flex;
@@ -586,6 +651,16 @@
       .BaseTemplate .FooterContainer .SocialMedia .allIcon {
         display: grid;
         justify-content: center; }
+      .BaseTemplate .FooterContainer .SocialMedia .socFB .LogoFacebook {
+        cursor: pointer; }
+      .BaseTemplate .FooterContainer .SocialMedia .socIG .LogoInstagram {
+        cursor: pointer; }
+      .BaseTemplate .FooterContainer .SocialMedia .socGL .LogoGoogle {
+        cursor: pointer;
+        font-weight: 600; }
+    .BaseTemplate .FooterContainer .FooterBottomContainer {
+      padding: 1rem 2rem;
+      background-color: #2e2e2e; }
 
 *,
 *::after,

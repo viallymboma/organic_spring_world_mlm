@@ -81,3 +81,35 @@ export const certifiedImages = [
         image: image9
     },
 ]
+
+
+export const testedImages = [
+    {
+        small_title: 'Welcome to',
+        title: 'ORGANIC SPRING WORLD',
+        description: 'Leading Organic Products manufacturer',
+        urls: '',
+        image: image1
+    },
+    {
+        small_title: 'We work to',
+        title: 'Innovate the Health industry',
+        description: 'Leading Organic Products manufacturer',
+        urls: '',
+        image: image2
+    },
+    {
+        small_title: 'We produce',
+        title: 'Up to Standard Organic Products',
+        description: 'Leading Organic Products manufacturer',
+        urls: '',
+        image: image3
+    },
+    {
+        small_title: 'Our Products',
+        title: 'Are well Tested',
+        description: 'Leading Organic Products manufacturer',
+        urls: '',
+        image: image4
+    },
+]
