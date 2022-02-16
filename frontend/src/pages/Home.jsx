@@ -10,6 +10,9 @@ import ContactSection from '../components/homePage_components/ContactSection';
 const Home = () => {
   return (
     <main className='HomePageContent'>
+      <dic className="color"></dic>
+      <dic className="color"></dic>
+      <dic className="color"></dic>
         <HeroSection />
         <AboutSection />
         <ProductsSection />

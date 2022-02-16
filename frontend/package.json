@@ -17,6 +17,7 @@
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-vanilla-tilt": "^1.0.0",
     "style-components": "^0.1.0",
     "swiper": "^8.0.3",
     "web-vitals": "^2.1.3"

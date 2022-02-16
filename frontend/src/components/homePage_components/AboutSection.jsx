@@ -1,13 +1,17 @@
 import React from 'react';
-import image1 from "../../assets/images/hero_section_img/agile_plus.png"
-import image2 from "../../assets/images/hero_section_img/arthrow_root.png"
-import image3 from "../../assets/images/hero_section_img/diabospring.png"
-import image4 from "../../assets/images/hero_section_img/immunovit.png"
-import image5 from "../../assets/images/hero_section_img/s_power.png"
+// import image1 from "../../assets/images/hero_section_img/agile_plus.png"
+// import image2 from "../../assets/images/hero_section_img/SPRINGCELLMAX_MOCK_UP8.png"
+import about1 from "../../assets/images/aboutus/oswl2.jpg";
+import about2 from "../../assets/images/aboutus/oswl3.jpg";
+import about3 from "../../assets/images/aboutus/oswl4.jpg";
+// import image3 from "../../assets/images/hero_section_img/diabospring.png"
+// import image4 from "../../assets/images/hero_section_img/immunovit.png"
+// import image5 from "../../assets/images/hero_section_img/s_power.png"
 // import { Swiper, SwiperSlide } from 'swiper/react';
-
+// import Tilt from 'react-vanilla-tilt'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Images, { certifiedImages, testedImages } from './ImageSlider'
+import { AnchorButton } from '../Button';
 // import {Carousel} from "react-responsive-carousel";
 // import {
 //   FaArrowAltCircleUp,
@@ -43,31 +47,27 @@ const AboutSection = () => {
         <div className="title">
           <h1>Who are we</h1>
         </div>
-        <div className="smalParag">
+        <div className='color1'></div>
+        {/* <div className="smalParag">
           <p>We are one of the best Organic Herbal Product Manufacturer in India.</p>
-        </div>
+        </div> */}
 
         <div className="aboutUsContent">
-
-          {
-            testedImages.map(imgage => {
-              return (
-
-                <div className="specialCard">
-                  <div className="picAndnumber">
-                    <div className="imgDiv">
-                      <img src={image4} alt="" srcset="" />
-                    </div>
-                    <div className="number">
-                      <h1>01</h1>
-                    </div>
-                  </div>
-                  <h3>Card One</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nobis deleniti fugiat, iure, enim similique ad facere tempore porro quos, unde perferendis harum commodi laboriosam expedita quo quis saepe ullam?</p>
-                </div>
-              )
-            })
-          }
+          <div className='image1' >
+            <div className='imgCont'>
+              <img src={about1} alt="" srcset="" />
+            </div>
+            {/* <div className='dropShadow'></div> */}
+            <div className='dropShadow'>
+              <h2>We strive to give the best</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Tempora in, molestias nemo provident, dicta excepturi 
+                saepe reprehenderit tenetur vel totam facilis nihil quam 
+                temporibus rem ullam quos, praesentium quidem suscipit.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
         
@@ -98,6 +98,33 @@ export default AboutSection;
 
 
 
+{/* {
+  testedImages.map(image => {
+    return (
+      <div className="specialCard">
+        <div className="imgDivu">
+          <img src={image.image} alt="" srcset="" />
+        </div>
+        <div className="cardContent">
+
+          <div className="picAndnumber">
+            <div className="imgDiv">
+              {
+                image.image === image2 ? <img src={image.image} style={{ width: 60 }} alt="" srcset="" /> : <img src={image.image} alt="" srcset="" />
+              }
+            </div>
+            <div className="number">
+              <h1>{image.number}</h1>
+            </div>
+          </div>
+          <h3>Card One</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nobis deleniti fugiat, iure, enim similique ad facere tempore porro quos, unde perferendis harum commodi laboriosam expedita quo quis saepe ullam?</p>
+          <AnchorButton fontSize={20} theLink="about/" btnText="Read More" />
+        </div>
+      </div>
+    )
+  })
+} */}
 
 
 
