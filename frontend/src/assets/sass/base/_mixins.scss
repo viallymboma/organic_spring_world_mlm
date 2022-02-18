@@ -134,6 +134,13 @@
     };
 
     // Mainly For a propo section
+    @if $breakpoint == px_seven_hundred {
+        @media (max-width: 700px) {
+            @content
+        }
+    };
+
+    // Mainly For a propo section
     @if $breakpoint == service_el {
         @media (max-width: 686px) {
             @content

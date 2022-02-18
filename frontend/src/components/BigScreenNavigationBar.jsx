@@ -93,7 +93,7 @@ const BigScreenNavigationBar = () => {
           <div className="topestDiv">
             <div className="contactPhone twog">
               <CallOutline color="white" />
-              <div className="callText"><h3>0544249377</h3></div>
+              <div className="callText"><h3>09178 3844 8792</h3></div>
             </div>
             <div className="contactEmail twog">
               <MailOutline color="white" />

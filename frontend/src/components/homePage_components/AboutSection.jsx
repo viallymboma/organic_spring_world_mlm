@@ -10,7 +10,7 @@ import about3 from "../../assets/images/aboutus/oswl4.jpg";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import Tilt from 'react-vanilla-tilt'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Images, { certifiedImages, testedImages } from './ImageSlider'
+import Images, { aboutImages, certifiedImages, testedImages } from './ImageSlider'
 import { AnchorButton } from '../Button';
 // import {Carousel} from "react-responsive-carousel";
 // import {
@@ -45,7 +45,7 @@ const AboutSection = () => {
 
       <div className="mainAboutUs">
         <div className="title">
-          <h1>Who are we</h1>
+          <h1>Who we are.</h1>
         </div>
         <div className='color1'></div>
         {/* <div className="smalParag">
@@ -55,7 +55,7 @@ const AboutSection = () => {
         <div className="aboutUsContent">
           <div className='image1' >
             <div className='imgCont'>
-              <img src={about1} alt="" srcset="" />
+              <img src={about1} alt="" srcSet="" />
             </div>
             {/* <div className='dropShadow'></div> */}
             <div className='dropShadow'>
@@ -66,8 +66,30 @@ const AboutSection = () => {
                 saepe reprehenderit tenetur vel totam facilis nihil quam 
                 temporibus rem ullam quos, praesentium quidem suscipit.
               </p>
+              <AnchorButton fontSize={15} theLink="about/" btnText="Read More" />
             </div>
           </div>
+
+        </div>
+        <div className='ImageDivDown'>
+          {
+            aboutImages.map(img => {
+              return (
+                <div className='image12' >
+                  <div className='imgCont'>
+                    <img src={img.image} alt="" srcSet="" />
+                  </div>
+                  <div className='dropShadow'>
+                    <h2>{img.h2_content}</h2>
+                    <p>
+                      { img.description }
+                    </p>
+                    <AnchorButton fontSize={15} theLink="about/" btnText="Read More" />
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
         
@@ -103,14 +125,14 @@ export default AboutSection;
     return (
       <div className="specialCard">
         <div className="imgDivu">
-          <img src={image.image} alt="" srcset="" />
+          <img src={image.image} alt="" srcSet="" />
         </div>
         <div className="cardContent">
 
           <div className="picAndnumber">
             <div className="imgDiv">
               {
-                image.image === image2 ? <img src={image.image} style={{ width: 60 }} alt="" srcset="" /> : <img src={image.image} alt="" srcset="" />
+                image.image === image2 ? <img src={image.image} style={{ width: 60 }} alt="" srcSet="" /> : <img src={image.image} alt="" srcSet="" />
               }
             </div>
             <div className="number">

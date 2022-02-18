@@ -1,15 +1,19 @@
-import image1 from "../../assets/images/hero_section_img/agile_plus.png"
-import image2 from "../../assets/images/hero_section_img/arthrow_root.png"
-import image3 from "../../assets/images/hero_section_img/diabospring.png"
-import image4 from "../../assets/images/hero_section_img/immunovit.png"
-import image5 from "../../assets/images/hero_section_img/s_power.png"
-import image5a from "../../assets/images/hero_section_img/L_GLUTHATION_GINSENG2.png"
+import agile_plus from "../../assets/images/hero_section_img/agile_plus.png"
+import arthrow_root from "../../assets/images/hero_section_img/arthrow_root.png"
+import diabospring from "../../assets/images/hero_section_img/diabospring.png"
+import immunovit from "../../assets/images/hero_section_img/immunovit.png"
+import s_power from "../../assets/images/hero_section_img/s_power.png"
+import L_GLUTHATION_GINSENG2 from "../../assets/images/hero_section_img/L_GLUTHATION_GINSENG2.png"
 // L_GLUTHATION_GINSENG2
 
 import image6 from "../../assets/images/accreditation/gmp.png"
 import image7 from "../../assets/images/accreditation/India_organic_logo.png"
 import image8 from "../../assets/images/accreditation/iso1.png"
 import image9 from "../../assets/images/accreditation/usda.png";
+
+import image10 from "../../assets/images/aboutus/oswl2.jpg";
+import image11 from "../../assets/images/aboutus/oswl3.jpg";
+import image12 from "../../assets/images/aboutus/oswl4.jpg";
 
 
 
@@ -22,42 +26,42 @@ export default [
         title: 'ORGANIC SPRING WORLD',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image1
+        image: agile_plus
     },
     {
         small_title: 'We work to',
         title: 'Innovate the Health industry',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image2
+        image: arthrow_root
     },
     {
         small_title: 'We produce',
         title: 'Up to Standard Organic Products',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image3
+        image: diabospring
     },
     {
         small_title: 'Our Products',
         title: 'Are well Tested',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image4
+        image: immunovit
     },
     {
         small_title: 'We serve',
         title: 'Locally and internationally',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image5
+        image: s_power
     },
     {
         small_title: 'We own',
         title: 'Our Own Farm',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image5a
+        image: L_GLUTHATION_GINSENG2
     }
 ];
 
@@ -97,44 +101,77 @@ export const certifiedImages = [
 export const testedImages = [
     {
         number: '01',
-        title: 'ORGANIC SPRING WORLD',
-        description: 'Leading Organic Products manufacturer',
+        title: 'Diabospring Capsule',
+        description: `Supports the body maintain a healthy blood glucose level, 
+                    Help maintain insulin level, 
+                    Boosts immunity, 
+                    Enable the body decrease the need for exogenous insulin, 
+                    Supports the body lower cholesterol level, 
+                    Enhances liver function`,
         urls: '',
-        image: image1
+        image: diabospring
     },
     {
         number: '02',
         title: 'Innovate the Health industry',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image2
+        image: arthrow_root
     },
     {
         number: '03',
         title: 'Up to Standard Organic Products',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image3
+        image: agile_plus
     },
     {
         number: '04',
-        title: 'Are well Tested',
-        description: 'Leading Organic Products manufacturer',
+        title: 'Imunovit',
+        description: `
+        Provides essential micronutrients for the body defense system, 
+        Help boost immunity, increase energy levels & an excellent blood tonic, 
+        The Alfalfa properties help regulate bowel movements & improve digestion
+        `,
         urls: '',
-        image: image4
+        image: immunovit
     },
     {
         small_title: 'We serve',
         title: 'Locally and internationally',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image5
+        image: s_power
     },
     {
         small_title: 'We own',
         title: 'Our Own Farm',
         description: 'Leading Organic Products manufacturer',
         urls: '',
-        image: image5a
+        image: L_GLUTHATION_GINSENG2
     }
+]
+
+export const aboutImages = [
+    {
+        number: '01',
+        h2_content: 'Up to Standard Organic Products',
+        description: `We also believe that amalgamating the use of Ayurvedic knowledge, scientific expertise and experience of our R&D team in developing unique formulation matters the most.`,
+        image: image10
+    },
+    {
+        number: '02',
+        h2_content: 'We run successful and impacting events',
+        description: `We have also received ISO, GMP, USFDA certification, 
+                        as we have made sure to offer optimum quality standards. `,
+        image: image11
+    },
+    {
+        number: '03',
+        h2_content: 'We celebrate everyone success',
+        description: `Organic Spring World is one of the best Ayurvedic companies 
+                        in India and believes that the ancient herbs is the right 
+                        choice to offer holistic health care solutions.`,
+        image: image12
+    },
 ]

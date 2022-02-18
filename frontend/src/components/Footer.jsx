@@ -27,13 +27,13 @@ const FooterContainer = () => {
               <div className="contactAddress add_">
                 <LocationOutline color="#b68d06" />
                 {/* <Link to="about/"> */}
-                <span>info@organicspringworld.com</span>
+                <span>Plot No. 33, ABCD, Gov’t Estate, Charkop, Kandivali (West), Mumbai Maharashtra-400067, India</span>
                 {/* </Link> */}
               </div>
               <div className="contactPhone add_">
                 <CallOutline color="#b68d06" />
                 {/* <Link to="/"> */}
-                <span>0544249377</span>
+                <span>09178 3844 8792</span>
                 {/* </Link> */}
               </div>
               <div className="contactMail add_">
