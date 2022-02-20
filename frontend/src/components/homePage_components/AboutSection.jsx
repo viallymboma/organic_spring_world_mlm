@@ -11,7 +11,7 @@ import about3 from "../../assets/images/aboutus/oswl4.jpg";
 // import Tilt from 'react-vanilla-tilt'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Images, { aboutImages, certifiedImages, testedImages } from './ImageSlider'
-import { AnchorButton } from '../Button';
+import { AnchorButton, AnchorButtonSharp } from '../Button';
 // import {Carousel} from "react-responsive-carousel";
 // import {
 //   FaArrowAltCircleUp,
@@ -21,6 +21,7 @@ import { AnchorButton } from '../Button';
 //   FaShoppingCart,
 //   FaUser,
 // } from 'react-icons/fa';
+import { CheckmarkDoneCircleOutline, EyeOutline, LogoFacebook, BulbOutline, LogoInstagram, LogoGoogle, ChevronForwardOutline, CallOutline, MailOutline, LocationOutline } from 'react-ionicons';
 
 const AboutSection = () => {
   return (
@@ -43,34 +44,36 @@ const AboutSection = () => {
         </div>
       </div>
 
+      <div className="bg"></div>
+      <div className="bg2"></div>
+
       <div className="mainAboutUs">
         <div className="title">
           <h1>Who we are.</h1>
         </div>
         <div className='color1'></div>
-        {/* <div className="smalParag">
-          <p>We are one of the best Organic Herbal Product Manufacturer in India.</p>
-        </div> */}
 
         <div className="aboutUsContent">
           <div className='image1' >
             <div className='imgCont'>
               <img src={about1} alt="" srcSet="" />
             </div>
-            {/* <div className='dropShadow'></div> */}
             <div className='dropShadow'>
               <h2>We strive to give the best</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Tempora in, molestias nemo provident, dicta excepturi 
-                saepe reprehenderit tenetur vel totam facilis nihil quam 
-                temporibus rem ullam quos, praesentium quidem suscipit.
+                Established in the year 2002, we have been the 
+                Leading Food Supplement Product Manufacturer as well as
+                the Ayurveda company.
+                <br />
+                We offer Highly effective Herbal and Ayurvedic Formulations
+                for domestic and international Market
               </p>
               <AnchorButton fontSize={15} theLink="about/" btnText="Read More" />
             </div>
           </div>
 
         </div>
+
         <div className='ImageDivDown'>
           {
             aboutImages.map(img => {
@@ -80,16 +83,87 @@ const AboutSection = () => {
                     <img src={img.image} alt="" srcSet="" />
                   </div>
                   <div className='dropShadow'>
-                    <h2>{img.h2_content}</h2>
                     <p>
-                      { img.description }
                     </p>
-                    <AnchorButton fontSize={15} theLink="about/" btnText="Read More" />
+                    <AnchorButton className="encore" fontSize={15} theLink="about/" btnText="Read More" />
                   </div>
                 </div>
               )
             })
           }
+        </div>
+
+      </div>
+
+      <div className="bluredBG">
+        <div className="blured">
+
+        </div>
+        <div className="wrapper">
+          <div className='TextArea'>
+            <div className="OurObjectives textCard">
+              <div className="OurObjectivesIcons">
+                <BulbOutline color="green" />
+              </div>
+              <div className="OurObjectivesTitle">
+                <h2>Our Objective </h2>
+              </div>
+              <div className="OurObjectivesText">
+                <p>
+                  Being a leading Ayurvedic and Herbal Product supplier, 
+                  the sole objective of the ayurveda company in India is customer 
+                  satisfaction by delivering excellent products at best price. 
+
+                  {/* and reliable services through our commitment, hard work and dedication.  */}
+                  {/* Our superior products and services elevate the quality of life worldwide. */}
+                </p>
+              </div>
+              <div className='ReadMoreBtnDiv'>
+                <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+              </div>
+            </div>
+            <div className="OurVision textCard">
+              <div className="OurVisionIcons">
+                <EyeOutline color="green" />
+              </div>
+              <div className="OurVisionTitle">
+                <h2>Our Vision</h2>
+              </div>
+              <div className="OurVisionText">
+                <p>
+                  Being top Herbal Product Manufacturer in India, our aim is to offer 
+                  people with the knowledge of ancient Ayurveda with a touch of technology 
+                  through never ending research. 
+                  {/* Our R and D team always strive to offer best 
+                  possible amalgamation of Ayurveda and Science as well as to enrich people 
+                  financially through our multi level marketing */}
+                </p>
+              </div>
+              <div className='ReadMoreBtnDiv'>
+                <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+              </div>
+            </div>
+            <div className="QualityControl textCard">
+              <div className="QualityControlIcon">
+                <CheckmarkDoneCircleOutline color="green" style={{ fontSize: 200 }} />
+              </div>
+              <div className="QualityControlTitle">
+                <h2> Quality Control </h2>
+              </div>
+              <div className="QualityControlText">
+                <p>
+                  Being a leading and trusted Herbal Product Manufacturer with breakthrough award 
+                  winning products optimum quality is the best policy. 
+                  We do not compromise on quality.
+                  {/* of raw herb to offer the best quality Herbal Ayurvedic supplements, by focusing on 
+                  constant commitment and hard work. */}
+                </p>
+              </div>
+              <div className='ReadMoreBtnDiv'>
+                <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
         
@@ -108,7 +182,68 @@ export default AboutSection;
 
 
 
+// <div className='TextArea'>
+//           <div className="OurObjectives textCard">
+//             <div className="OurObjectivesIcons">
+//               <BulbOutline />
+//             </div>
+//             <div className="OurObjectivesTitle">
+//               <h2>Our Objective </h2>
+//             </div>
+//             <div className="OurObjectivesText">
+//               <p>
+//                 Being a leading Ayurvedic and Herbal Product supplier, 
+//                 the sole objective of the ayurveda company in India is customer 
+//                 satisfaction by delivering excellent products at best price. 
 
+//                 {/* and reliable services through our commitment, hard work and dedication.  */}
+//                 {/* Our superior products and services elevate the quality of life worldwide. */}
+//               </p>
+//             </div>
+//             <div className='ReadMoreBtnDiv'>
+//               <AnchorButton className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+//             </div>
+//           </div>
+//           <div className="OurVision textCard">
+//             <div className="OurVisionIcons">
+//               <EyeOutline />
+//             </div>
+//             <div className="OurVisionTitle">
+//               <h2>Our Vision</h2>
+//             </div>
+//             <div className="OurVisionText">
+//               <p>
+//                 Being top Herbal Product Manufacturer in India, our aim is to offer 
+//                 people with the knowledge of ancient Ayurveda with a touch of technology 
+//                 through never ending research. 
+//                 {/* Our R and D team always strive to offer best 
+//                 possible amalgamation of Ayurveda and Science as well as to enrich people 
+//                 financially through our multi level marketing */}
+//               </p>
+//             </div>
+//             <div className='ReadMoreBtnDiv'>
+//               <AnchorButton className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+//             </div>
+//           </div>
+//           <div className="QualityControl textCard">
+//             <div className="QualityControlIcon">
+//               <CheckmarkDoneCircleOutline style={{ fontSize: 200 }} />
+//             </div>
+//             <div className="QualityControlTitle">
+//               <h2> Quality Control </h2>
+//             </div>
+//             <div className="QualityControlText">
+//                 Being a leading and trusted Herbal Product Manufacturer with breakthrough award 
+//                 winning products optimum quality is the best policy. 
+//                 We do not compromise on quality.
+//                 {/* of raw herb to offer the best quality Herbal Ayurvedic supplements, by focusing on 
+//                 constant commitment and hard work. */}
+//             </div>
+//             <div className='ReadMoreBtnDiv'>
+//               <AnchorButton className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+//             </div>
+//           </div>
+//         </div>
 
 
 

@@ -41,6 +41,12 @@ const BigScreenNavigationBar = () => {
       color: 'green',
       IconName: 'Signup',
       link: "registration/"
+    },
+    {
+      Icon: Person,
+      color: 'green',
+      IconName: 'Complan',
+      link: "complan/"
     }
   ]
 
@@ -91,7 +97,7 @@ const BigScreenNavigationBar = () => {
         {
           headerOnScroll === "BigScreenNavigationBar" ? 
           <div className="topestDiv">
-            <div className="contactPhone twog">
+            <div className="contactPhone">
               <CallOutline color="white" />
               <div className="callText"><h3>09178 3844 8792</h3></div>
             </div>
@@ -111,13 +117,33 @@ const BigScreenNavigationBar = () => {
           <div className="middleContainer">
 
             <ul>
+              {/* <a href='https://organicspring.world/' className='Linky'>
+                <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className='active'>
+                  <div color="#fff" width="40px" height="30px" className="icon" >Home</div>
+                </li>
+              </a>
+              <a href='https://organicspring.world/system/site/register' className='Linky'>
+                <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className='active'>
+                  <div color="#fff" width="40px" height="30px" className="icon" >Sign Up</div>
+                </li>
+              </a>
+              <a href='https://organicspring.world/system/site/login' className='Linky'>
+                <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className='active'>
+                  <div color="#fff" width="40px" height="30px" className="icon" >Sign In</div>
+                </li>
+              </a>
+              <a href='https://organicspring.world/Organic_Spring_WorldAFRICA.pdf' className='Linky'>
+                <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className='active'>
+                  <div color="#fff" width="40px" height="30px" className="icon" >Comp Plan</div>
+                </li>
+              </a> */}
               {
                 navLinks.map(({ Icon, IconName, link }, i) => {
                   return (
                     <Link className='Linky' to={link}>
                       <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className={active === i ? 'active' : ""} onClick={() => setActive(i)} key={i}>
                         <div color="#fff" width="40px" height="30px" className="icon" >{IconName}</div>
-                        {/* <Icon color="#fff" width="40px" height="30px" className="icon" >{IconName}</Icon> */}
+                        
                       </li>
                     </Link>
                   )

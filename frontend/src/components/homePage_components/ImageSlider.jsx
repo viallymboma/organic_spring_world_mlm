@@ -24,14 +24,14 @@ export default [
     {
         small_title: 'Welcome to',
         title: 'ORGANIC SPRING WORLD',
-        description: 'Leading Organic Products manufacturer',
+        description: 'Leading Organic Products manufacturer, ',
         urls: '',
         image: agile_plus
     },
     {
         small_title: 'We work to',
         title: 'Innovate the Health industry',
-        description: 'Leading Organic Products manufacturer',
+        description: 'Leading Organic Products manufacturer & Exporter of Ayurvedic & Herbal Products of India',
         urls: '',
         image: arthrow_root
     },
@@ -99,57 +99,78 @@ export const certifiedImages = [
 
 
 export const testedImages = [
+    // {
+    //     number: '01',
+    //     small_title: 'We own',
+    //     title: 'Springcell Max',
+    //     description: `
+    //         Powerful antioxidant, 
+    //         Detoxifies your liver and body, 
+    //         Enriched with naturally occurring ingredients, 
+    //         Enhance absorption and Bioavailability, 
+    //         High potency and premium quality,
+    //     `,
+    //     urls: '',
+    //     image: L_GLUTHATION_GINSENG2
+    // },
     {
         number: '01',
         title: 'Diabospring Capsule',
         description: `Supports the body maintain a healthy blood glucose level, 
-                    Help maintain insulin level, 
-                    Boosts immunity, 
-                    Enable the body decrease the need for exogenous insulin, 
-                    Supports the body lower cholesterol level, 
-                    Enhances liver function`,
+            Help maintain insulin level, 
+            Boosts immunity, 
+            Enable the body decrease the need for exogenous insulin, 
+            Supports the body lower cholesterol level, 
+            Enhances liver function
+        `,
         urls: '',
         image: diabospring
     },
-    {
-        number: '02',
-        title: 'Innovate the Health industry',
-        description: 'Leading Organic Products manufacturer',
-        urls: '',
-        image: arthrow_root
-    },
-    {
-        number: '03',
-        title: 'Up to Standard Organic Products',
-        description: 'Leading Organic Products manufacturer',
-        urls: '',
-        image: agile_plus
-    },
+    
     {
         number: '04',
         title: 'Imunovit',
         description: `
-        Provides essential micronutrients for the body defense system, 
-        Help boost immunity, increase energy levels & an excellent blood tonic, 
-        The Alfalfa properties help regulate bowel movements & improve digestion
+            Provides essential micronutrients for the body defense system, 
+            Help boost immunity, increase energy levels & an excellent blood tonic, 
+            The Alfalfa properties help regulate bowel movements & improve digestion
         `,
         urls: '',
         image: immunovit
     },
     {
         small_title: 'We serve',
-        title: 'Locally and internationally',
-        description: 'Leading Organic Products manufacturer',
+        title: 'S Power Capsules',
+        description: `
+            Helps improve body muscle, strength, stamina & immunity,
+            Supports reduction in cortisol, stress hormones and body stress,
+            Regulates hormones that boost desire & calm the mind
+        `,
         urls: '',
         image: s_power
     },
     {
-        small_title: 'We own',
-        title: 'Our Own Farm',
-        description: 'Leading Organic Products manufacturer',
+        number: '02',
+        title: 'Arthro Root',
+        description: `
+            100% chemical free, pure and natural oil for joint support,
+            Cold-Pressed oil contains adequate amount of nutrients which has the property to be easily absorbed by the body,
+            Ayurvedic blend of classic herbs with cold pressed oils help in all joint issues
+        `,
         urls: '',
-        image: L_GLUTHATION_GINSENG2
+        image: arthrow_root
+    },
+    {
+        number: '03',
+        title: 'Argile Plus Capsules',
+        description: `
+            Joint care formula helps in reducing joint pain, knee pain, swellings and inflammations,
+            Sunthee and gingerols as potent anti-inflammatory compound help in reducing inflammation & control arthritic pain
+        `,
+        urls: '',
+        image: agile_plus
     }
+    
 ]
 
 export const aboutImages = [

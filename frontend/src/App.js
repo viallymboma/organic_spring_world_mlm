@@ -1,5 +1,6 @@
 import React from 'react';
 import './assets/css/style.css';
+import complan from './assets/docs/Organic_Spring_World_PPT_AFRICA.pdf';
 import Page from './components/Page';
 import Home from './pages/Home';
 import CompensationPlan from './pages/CompensationPlan';
@@ -43,6 +44,7 @@ function App() {
           <Route path="videos_page/" element={<VideosPage />} />
           <Route path="registration/" element={<Registration />} />
           <Route path="login/" element={<Login />} />
+          {/* <Route path="complan/" element={complan} /> */}
         </Routes>
 
         {/* These sections are static throughout the entire back office after login to account */}

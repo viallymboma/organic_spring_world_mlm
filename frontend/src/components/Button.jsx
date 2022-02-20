@@ -28,3 +28,18 @@ export const AnchorButton = (props) => {
   )
   // aditionalClassName
 }
+
+
+export const AnchorButtonSharp = (props) => {
+  return (
+    <Link 
+      // className={ props.aditionalClassName ? `linkBnt ${props.aditionalClassName}` : 'linkBnt'} 
+      className='linkBntSharp'
+      style={{ fontSize: props.fontSize }} 
+      to={props.theLink}
+    >
+      {props.btnText}
+    </Link>
+  )
+  // aditionalClassName
+}

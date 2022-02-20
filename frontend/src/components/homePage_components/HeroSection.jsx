@@ -75,9 +75,6 @@ const HeroSection = () => {
         <ChevronBackOutline color="black" onClick={() => runSetActiveIndex("prev")} />
       </div>
 
-      {/* <div className="img_div">
-        <img src={image1} alt="img" />
-      </div> */}
 
       <section className='SliderContentStyle'>
       {
