@@ -117,7 +117,7 @@ const BigScreenNavigationBar = () => {
           <div className="middleContainer">
 
             <ul>
-              {/* <a href='https://organicspring.world/' className='Linky'>
+              <a href='https://organicspring.world/' className='Linky'>
                 <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className='active'>
                   <div color="#fff" width="40px" height="30px" className="icon" >Home</div>
                 </li>
@@ -136,18 +136,18 @@ const BigScreenNavigationBar = () => {
                 <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className='active'>
                   <div color="#fff" width="40px" height="30px" className="icon" >Comp Plan</div>
                 </li>
-              </a> */}
+              </a>
               {
-                navLinks.map(({ Icon, IconName, link }, i) => {
-                  return (
-                    <Link className='Linky' to={link}>
-                      <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className={active === i ? 'active' : ""} onClick={() => setActive(i)} key={i}>
-                        <div color="#fff" width="40px" height="30px" className="icon" >{IconName}</div>
+                // navLinks.map(({ Icon, IconName, link }, i) => {
+                //   return (
+                //     <Link className='Linky' to={link}>
+                //       <li style={{ width: `${LINK_WIDTH}%`, color: 'white' }} className={active === i ? 'active' : ""} onClick={() => setActive(i)} key={i}>
+                //         <div color="#fff" width="40px" height="30px" className="icon" >{IconName}</div>
                         
-                      </li>
-                    </Link>
-                  )
-                })
+                //       </li>
+                //     </Link>
+                //   )
+                // })
               }
               {/* <StyledHighlighter color={navLinks[active].color} ref={ highlighterRef } id="highlighter" /> */}
             </ul>

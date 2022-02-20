@@ -6,7 +6,7 @@ const VideoSection = () => {
     <div className='VideoSectionContent'>
         <div className="leftSideDescription">
             <div className="bigTitle">
-                <h1>We Take Care You And Your Family</h1>
+                <h1>We Take Care Of You And Your Family</h1>
             </div>
             <div className="smalParagraph">
                 <p>

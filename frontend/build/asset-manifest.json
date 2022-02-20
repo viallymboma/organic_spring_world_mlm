@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cdb823ae.css",
-    "main.js": "/static/js/main.029f4313.js",
+    "main.js": "/static/js/main.9e60b8dd.js",
     "static/media/Organic_Spring_World_PPT_AFRICA.pdf": "/static/media/Organic_Spring_World_PPT_AFRICA.0a4d1c700ad0051973db.pdf",
     "static/media/s_power.png": "/static/media/s_power.ad7e02a81a485831c1da.png",
     "static/media/immunovit.png": "/static/media/immunovit.df434fc8e22c6488183b.png",
@@ -13,6 +13,7 @@
     "static/media/usda.png": "/static/media/usda.427a0412277a9ed42d6b.png",
     "static/media/logo_white.png": "/static/media/logo_white.f92740eaae4d47389de6.png",
     "static/media/logo_basic.png": "/static/media/logo_basic.69bf953346234fba70ba.png",
+    "static/media/Dhiren.jpeg": "/static/media/Dhiren.0272c4dd34da801044fd.jpeg",
     "static/media/network_hero.jpg": "/static/media/network_hero.d879ec7aebbffe9be996.jpg",
     "static/media/gmp.png": "/static/media/gmp.4743a6c45fd26586ba5f.png",
     "static/media/oswl4.jpg": "/static/media/oswl4.26de62b170b9da040ed5.jpg",
@@ -22,10 +23,10 @@
     "static/media/iso1.png": "/static/media/iso1.281cffdc7cc9f8629ac5.png",
     "index.html": "/index.html",
     "main.cdb823ae.css.map": "/static/css/main.cdb823ae.css.map",
-    "main.029f4313.js.map": "/static/js/main.029f4313.js.map"
+    "main.9e60b8dd.js.map": "/static/js/main.9e60b8dd.js.map"
   },
   "entrypoints": [
     "static/css/main.cdb823ae.css",
-    "static/js/main.029f4313.js"
+    "static/js/main.9e60b8dd.js"
   ]
 }

@@ -1,7 +1,9 @@
 import React from 'react';
 // import image1 from "../../assets/images/hero_section_img/agile_plus.png"
 // import image2 from "../../assets/images/hero_section_img/SPRINGCELLMAX_MOCK_UP8.png"
-import about1 from "../../assets/images/aboutus/oswl2.jpg";
+// import about1 from "../../assets/images/aboutus/oswl2.jpg";
+import about1 from "../../assets/images/directors/Dhiren.jpeg";
+// import about1 from "../../assets/images/directors/Dhiren2.jpg";
 import about2 from "../../assets/images/aboutus/oswl3.jpg";
 import about3 from "../../assets/images/aboutus/oswl4.jpg";
 // import image3 from "../../assets/images/hero_section_img/diabospring.png"
