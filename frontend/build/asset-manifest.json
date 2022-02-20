@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cdb823ae.css",
+    "main.js": "/static/js/main.029f4313.js",
+    "static/media/Organic_Spring_World_PPT_AFRICA.pdf": "/static/media/Organic_Spring_World_PPT_AFRICA.0a4d1c700ad0051973db.pdf",
+    "static/media/s_power.png": "/static/media/s_power.ad7e02a81a485831c1da.png",
+    "static/media/immunovit.png": "/static/media/immunovit.df434fc8e22c6488183b.png",
+    "static/media/agile_plus.png": "/static/media/agile_plus.ac0ad1aa84c15acee9d6.png",
+    "static/media/diabospring.png": "/static/media/diabospring.fa225c56f45babbc0d29.png",
+    "static/media/L_GLUTHATION_GINSENG2.png": "/static/media/L_GLUTHATION_GINSENG2.742dcf76ad3291fe8763.png",
+    "static/media/hero_.png": "/static/media/hero_.20e3b3a0eda7dbb806c0.png",
+    "static/media/arthrow_root.png": "/static/media/arthrow_root.c4a05d8888f3a7810469.png",
+    "static/media/usda.png": "/static/media/usda.427a0412277a9ed42d6b.png",
+    "static/media/logo_white.png": "/static/media/logo_white.f92740eaae4d47389de6.png",
+    "static/media/logo_basic.png": "/static/media/logo_basic.69bf953346234fba70ba.png",
+    "static/media/network_hero.jpg": "/static/media/network_hero.d879ec7aebbffe9be996.jpg",
+    "static/media/gmp.png": "/static/media/gmp.4743a6c45fd26586ba5f.png",
+    "static/media/oswl4.jpg": "/static/media/oswl4.26de62b170b9da040ed5.jpg",
+    "static/media/India_organic_logo.png": "/static/media/India_organic_logo.81ebb926843babdc77d7.png",
+    "static/media/oswl3.jpg": "/static/media/oswl3.78895b492a0f3e4b777e.jpg",
+    "static/media/oswl2.jpg": "/static/media/oswl2.989b64de0f69c319fdd9.jpg",
+    "static/media/iso1.png": "/static/media/iso1.281cffdc7cc9f8629ac5.png",
+    "index.html": "/index.html",
+    "main.cdb823ae.css.map": "/static/css/main.cdb823ae.css.map",
+    "main.029f4313.js.map": "/static/js/main.029f4313.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdb823ae.css",
+    "static/js/main.029f4313.js"
+  ]
+}
