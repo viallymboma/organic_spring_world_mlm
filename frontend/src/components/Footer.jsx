@@ -5,6 +5,7 @@ import Button from './Button';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/logo_white.png';
 import logo_gold from '../assets/images/logo/logo_basic.png';
+import redirectOutside, { redirectToSignInOutside, redirectToSignUpOutside } from './homePage_components/RedirectLink';
 
 const FooterContainer = () => {
   return (
@@ -70,29 +71,35 @@ const FooterContainer = () => {
                   {/* <span>Home</span> */}
                 </Link>
               </div>
-              <div className="exploreAbout l_in_k">
+              {/* <div className="exploreAbout l_in_k">
                 <ChevronForwardOutline color="#b68d06" />
                 <Link className='link__' to="about/">
                   <span>About</span>
                 </Link>
-              </div>
-              <div className="exploreProdcuts l_in_k">
+              </div> */}
+              {/* <div className="exploreProdcuts l_in_k">
                 <ChevronForwardOutline color="#b68d06" />
                 <Link className='link__' to="about/">
                   <span>Products</span>
                 </Link>
-              </div>
+              </div> */}
               <div className="exploreSignUp l_in_k">
                 <ChevronForwardOutline color="#b68d06" />
-                <Link className='link__' to="">
+                <a className='link__' onClick={redirectToSignUpOutside}>
                   <span>Sign Up</span>
-                </Link>
+                </a>
               </div>
               <div className="exploreSignIn l_in_k">
                 <ChevronForwardOutline color="#b68d06" />
-                <Link className='link__' to="">
+                <a className='link__' onClick={redirectToSignInOutside}>
                   <span>Login</span>
-                </Link>
+                </a>
+              </div>
+              <div className="exploreSignIn l_in_k">
+                <ChevronForwardOutline color="#b68d06" />
+                <a className='link__' onClick={redirectOutside}>
+                  <span>Comp plan</span>
+                </a>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import about1 from "../../assets/images/aboutus/oswl2.jpg";
 import { AnchorButton, AnchorButtonSharp } from '../Button';
 import { MedalOutline, LogoInstagram, LogoGoogle, ChevronForwardOutline, CallOutline, MailOutline, LocationOutline } from 'react-ionicons';
+import redirectOutside from './RedirectLink';
 
 const ParalaxSection = () => {
   return (
@@ -36,8 +37,8 @@ const ParalaxSection = () => {
               for domestic and international Market
             </p>
 
-            <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
-
+            <AnchorButtonSharp onACLick={redirectOutside} className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+            
             <div className="design"></div>
             <div className="design2"></div>
           </div>

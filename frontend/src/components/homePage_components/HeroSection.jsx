@@ -10,6 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import {Carousel} from "react-responsive-carousel";
 import ImageSlider from './ImageSlider';
 import Button from '../Button';
+import redirectOutside from './RedirectLink';
 
 const len = ImageSlider.length - 1;
 
@@ -94,7 +95,9 @@ const HeroSection = () => {
                     <div className="h3_style">
                       <h3 className='slide_text'>{ slide.description }</h3>
                     </div>
-                    <Button text="Explore" />
+                    <a href="https://organicspring.world/Organic_Spring_WorldAFRICA.pdf">
+                      <Button text="Explore" onACLick={redirectOutside} />
+                    </a>
                   </div>
                   <div className="imgDiv">
                   {/* speed={ determinHeroImageParalaxSpeed() } */}

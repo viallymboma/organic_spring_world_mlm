@@ -52,6 +52,12 @@ const BigScreenNavigationBar = () => {
 
   const [active, setActive] = useState(0);
   const [headerOnScroll, setHeaderOnScroll] = useState("BigScreenNavigationBar")
+  const [sideNavState, setSideNavState] = useState(false);
+
+  const toggleSideNavBar = () => {
+    setSideNavState (!sideNavState);
+  }
+
   const highlighterRef = useRef();
   const LINK_WIDTH = 100;
   const StyledHighlighter = styled.div`
@@ -64,7 +70,7 @@ const BigScreenNavigationBar = () => {
           0 0 45px ${props => props.color},
           0 0 60px ${props => props.color};
     }
-  `
+  `;
 
   const listenSrollEvent = (event) => {
     // if (window.scrollY < 100) {
@@ -90,6 +96,7 @@ const BigScreenNavigationBar = () => {
       window.removeEventListener('scroll', listenSrollEvent);
     }
   }, [])
+
 
   return (
     <nav className={headerOnScroll}>
@@ -164,11 +171,11 @@ const BigScreenNavigationBar = () => {
             {/* <ListOutline color="black" /> */}
           </div>
 
-          <div className="lastDiv">
+          <div className="lastDiv" onClick={ toggleSideNavBar }>
             {
               window.pageYOffset > 100 ? <AppsOutline color="white" /> : <AppsOutline color="rgb(182, 141, 6)" />
             }
-            
+
             {/* <ListOutline color="black" /> */}
           </div>
         </div>

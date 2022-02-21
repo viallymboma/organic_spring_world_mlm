@@ -24,7 +24,7 @@ export default [
     {
         small_title: 'Welcome to',
         title: 'ORGANIC SPRING WORLD',
-        description: 'Leading Organic Products manufacturer, ',
+        description: 'Leading Health & Wellness Products Provider through World Class Supplements, ',
         urls: '',
         image: agile_plus
     },

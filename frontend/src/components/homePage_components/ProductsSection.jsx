@@ -1,8 +1,9 @@
 import React from 'react';
 import { testedImages } from './ImageSlider';
 import image2 from "../../assets/images/hero_section_img/arthrow_root.png"
-import { AnchorButton } from '../Button';
+import { ALinkCustomized, AnchorButton } from '../Button';
 import L_GLUTHATION_GINSENG2 from "../../assets/images/hero_section_img/L_GLUTHATION_GINSENG2.png"
+import redirectOutside from './RedirectLink';
 
 const ProductsSection = () => {
   return (
@@ -96,8 +97,7 @@ const ProductsSection = () => {
                     <h3> { image.title } </h3>
                     <p>{ image.description }</p>
 
-                    <AnchorButton fontSize={20} theLink="about/" btnText="Read More" />
-                    
+                    <AnchorButton fontSize={20} theLink="about/" onACLick={redirectOutside} btnText="Read More" />
                   </div>
                 </div>
               )

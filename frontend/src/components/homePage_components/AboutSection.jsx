@@ -13,7 +13,7 @@ import about3 from "../../assets/images/aboutus/oswl4.jpg";
 // import Tilt from 'react-vanilla-tilt'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Images, { aboutImages, certifiedImages, testedImages } from './ImageSlider'
-import { AnchorButton, AnchorButtonSharp } from '../Button';
+import { AnchorButton, AnchorButtonSharp, ALinkCustomized } from '../Button';
 // import {Carousel} from "react-responsive-carousel";
 // import {
 //   FaArrowAltCircleUp,
@@ -24,6 +24,14 @@ import { AnchorButton, AnchorButtonSharp } from '../Button';
 //   FaUser,
 // } from 'react-icons/fa';
 import { CheckmarkDoneCircleOutline, EyeOutline, LogoFacebook, BulbOutline, LogoInstagram, LogoGoogle, ChevronForwardOutline, CallOutline, MailOutline, LocationOutline } from 'react-ionicons';
+import redirectOutside from './RedirectLink';
+
+
+// const redirectOutside = () => {
+//   const link = `https://organicspring.world/Organic_Spring_WorldAFRICA.pdf`;
+//   window.open(link, "_blank");
+// }
+
 
 const AboutSection = () => {
   return (
@@ -70,7 +78,9 @@ const AboutSection = () => {
                 We offer Highly effective Herbal and Ayurvedic Formulations
                 for domestic and international Market
               </p>
-              <AnchorButton fontSize={15} theLink="about/" btnText="Read More" />
+              <AnchorButton fontSize={15} theLink="about/" btnText="Read More" onACLick={redirectOutside} />
+              {/* <AnchorButton fontSize={15} theLink="about/" btnText="Read More" onACLick={() => redirectOutside()} /> */}
+              {/* <ALinkCustomized sendLink="https://organicspring.world/Organic_Spring_WorldAFRICA.pdf" fontSize={15} theLink="about/" btnText="Read More" /> */}
             </div>
           </div>
 
@@ -87,7 +97,8 @@ const AboutSection = () => {
                   <div className='dropShadow'>
                     <p>
                     </p>
-                    <AnchorButton className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+                    <AnchorButton fontSize={15} theLink="about/" btnText="Read More" onACLick={redirectOutside} />
+                    {/* <AnchorButton className="encore" fontSize={15} theLink="about/" btnText="Read More" /> */}
                   </div>
                 </div>
               )
@@ -121,7 +132,7 @@ const AboutSection = () => {
                 </p>
               </div>
               <div className='ReadMoreBtnDiv'>
-                <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+                <AnchorButtonSharp onACLick={redirectOutside} className="encore" fontSize={15} theLink="about/" btnText="Read More" />
               </div>
             </div>
             <div className="OurVision textCard">
@@ -142,7 +153,7 @@ const AboutSection = () => {
                 </p>
               </div>
               <div className='ReadMoreBtnDiv'>
-                <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+                <AnchorButtonSharp onACLick={redirectOutside} className="encore" fontSize={15} theLink="about/" btnText="Read More" />
               </div>
             </div>
             <div className="QualityControl textCard">
@@ -162,7 +173,7 @@ const AboutSection = () => {
                 </p>
               </div>
               <div className='ReadMoreBtnDiv'>
-                <AnchorButtonSharp className="encore" fontSize={15} theLink="about/" btnText="Read More" />
+                <AnchorButtonSharp onACLick={redirectOutside} className="encore" fontSize={15} theLink="about/" btnText="Read More" />
               </div>
             </div>
           </div>

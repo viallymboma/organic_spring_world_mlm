@@ -23,6 +23,7 @@ import BigScreenNavigationBar from './components/BigScreenNavigationBar';
 import FooterContainer from './components/Footer';
 import BigScreenAsideBar from './components/dashboardComponents/BigScreenAsideBar';
 import SmallScreenAsideBar from './components/dashboardComponents/SmallScreenAsideBar';
+import CombinedNavigations from './components/CombinedNavigations';
 
 
 function App() {
@@ -32,8 +33,9 @@ function App() {
       {/* These sections are static throughout the entire website */}
 
       <BrowserRouter>
-        <BigScreenNavigationBar />      
-        <SmallScreenNavigationBar />
+        <CombinedNavigations />
+        {/* <BigScreenNavigationBar />      
+        <SmallScreenNavigationBar /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />

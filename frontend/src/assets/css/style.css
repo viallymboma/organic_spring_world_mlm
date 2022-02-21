@@ -304,10 +304,41 @@
             display: grid;
             justify-content: flex-end; } }
   .BaseTemplate .SmallScreenNavigationBar {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0%;
     transform: translateX(-100%);
+    background-color: white;
+    z-index: 30;
+    transition: ease-in-out all .3s;
     height: 100%;
-    transition: ease-in-out all .3s; }
+    width: 70%; }
+    .BaseTemplate .SmallScreenNavigationBar .closeBtn {
+      position: absolute;
+      right: 10%;
+      top: 1rem; }
+    .BaseTemplate .SmallScreenNavigationBar .navDiv {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 5rem; }
+  .BaseTemplate .dropShadowClose {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: blur(150px);
+    background-color: #b68d06;
+    background-color: #000000;
+    transition: all .3s ease-in-out;
+    z-index: -15;
+    opacity: 0; }
+  .BaseTemplate .showDropShadowClose {
+    z-index: 29;
+    opacity: 1; }
+  .BaseTemplate .openSmallScreenNavigationBar {
+    transform: translateX(0); }
   .BaseTemplate .BigScreenAsideBar {
     position: absolute;
     transform: translateX(-100%);
@@ -1187,6 +1218,10 @@ html {
     text-decoration: none; }
   html li {
     list-style: none; }
+  html button {
+    outline: none;
+    border: none;
+    cursor: pointer; }
   html body {
     height: 100%;
     width: 100%; }

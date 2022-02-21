@@ -18,10 +18,17 @@ html {
 
     a {
         text-decoration: none;
+        // margin: 1rem;
     }
 
     li {
         list-style: none;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        cursor: pointer;
     }
 
     background-color: white;
