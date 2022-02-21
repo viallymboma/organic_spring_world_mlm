@@ -34,37 +34,37 @@ const ProductsSection = () => {
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>Detoxifies your liver and body </span>
+                  <span>High potency and premium quality</span>
                 </li>
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>Enriched with naturally occurring ingredients </span>
+                  <span>Helps Boost brain function, promotes focus, concentration and energy </span>
                 </li>
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>Enhance absorption and Bioavailability </span>
+                  <span>Helps Detoxifies your liver and body </span>
                 </li>
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>High potency and premium quality </span>
+                  <span>Helps Enhance absorption and Bioavailability </span>
                 </li>
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>Boost brain function, promotes focus, concentration and energy </span>
+                  <span>Helps Enriched with naturally occurring ingredients </span>
                 </li>
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>Improves performance and stamina </span>
+                  <span>Helps Improves performance and stamina </span>
                 </li>
                 <br />
                 <li className='style_list'>
                   <div className="list_style"></div> 
-                  <span>Improves skin condition, hyperpigmentation and acne scars, lightens and brighten skin naturally.</span>
+                  <span>Helps Improves skin condition, hyperpigmentation and acne scars, lightens and brighten skin naturally.</span>
                 </li>
                 <br />
               </ul>

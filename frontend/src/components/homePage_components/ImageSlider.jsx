@@ -114,7 +114,7 @@ export const testedImages = [
     //     image: L_GLUTHATION_GINSENG2
     // },
     {
-        number: '01',
+        number: '02',
         title: 'Diabospring Capsule',
         description: `Supports the body maintain a healthy blood glucose level, 
             Help maintain insulin level, 
@@ -128,7 +128,7 @@ export const testedImages = [
     },
     
     {
-        number: '04',
+        number: '03',
         title: 'Imunovit',
         description: `
             Provides essential micronutrients for the body defense system, 
@@ -139,6 +139,7 @@ export const testedImages = [
         image: immunovit
     },
     {
+        number: '04',
         small_title: 'We serve',
         title: 'S Power Capsules',
         description: `
@@ -150,7 +151,7 @@ export const testedImages = [
         image: s_power
     },
     {
-        number: '02',
+        number: '05',
         title: 'Arthro Root',
         description: `
             100% chemical free, pure and natural oil for joint support,
@@ -161,7 +162,7 @@ export const testedImages = [
         image: arthrow_root
     },
     {
-        number: '03',
+        number: '06',
         title: 'Argile Plus Capsules',
         description: `
             Joint care formula helps in reducing joint pain, knee pain, swellings and inflammations,

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ef90ddd.css",
-    "main.js": "/static/js/main.05d170ed.js",
+    "main.js": "/static/js/main.1d85e688.js",
     "static/media/Organic_Spring_World_PPT_AFRICA.pdf": "/static/media/Organic_Spring_World_PPT_AFRICA.0a4d1c700ad0051973db.pdf",
     "static/media/s_power.png": "/static/media/s_power.ad7e02a81a485831c1da.png",
     "static/media/immunovit.png": "/static/media/immunovit.df434fc8e22c6488183b.png",
@@ -23,10 +23,10 @@
     "static/media/iso1.png": "/static/media/iso1.281cffdc7cc9f8629ac5.png",
     "index.html": "/index.html",
     "main.8ef90ddd.css.map": "/static/css/main.8ef90ddd.css.map",
-    "main.05d170ed.js.map": "/static/js/main.05d170ed.js.map"
+    "main.1d85e688.js.map": "/static/js/main.1d85e688.js.map"
   },
   "entrypoints": [
     "static/css/main.8ef90ddd.css",
-    "static/js/main.05d170ed.js"
+    "static/js/main.1d85e688.js"
   ]
 }
