@@ -8,6 +8,7 @@ import TestimonialsSection from '../components/homePage_components/TestimonialSe
 import ContactSection from '../components/homePage_components/ContactSection';
 import VideoSection from '../components/homePage_components/VideoSection';
 import ParalaxSection from '../components/homePage_components/ParalaxSection';
+import CompensationSection from '../components/homePage_components/CompensationSection';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <ProductsSection />
         <VideoSection />
         <ParalaxSection />
+        <CompensationSection />
         {/* <PackagesSection /> */}
         {/* <HowItWorksSection /> */}
         {/* <TestimonialsSection /> */}

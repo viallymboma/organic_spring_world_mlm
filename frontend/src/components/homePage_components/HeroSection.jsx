@@ -28,7 +28,7 @@ const HeroSection = () => {
 
   const measurements = getWindowDimensions();
 
-  const [windowDimensions, setWindowDimensions] = useState(measurements);
+  const [ windowDimensions, setWindowDimensions ] = useState(measurements);
   useEffect(() => {
       const interval = setInterval(() => {
           setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);

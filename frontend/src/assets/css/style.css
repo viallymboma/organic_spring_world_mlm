@@ -126,7 +126,7 @@
       grid-template-columns: 4fr 15fr 4fr;
       align-items: center;
       justify-content: center; }
-      @media (max-width: 1400px) {
+      @media (max-width: 900px) {
         .BaseTemplate .BigScreenNavigationBar .overAllContainer {
           grid-template-columns: repeat(2, 1fr); } }
       .BaseTemplate .BigScreenNavigationBar .overAllContainer .logoContainer {
@@ -144,7 +144,7 @@
         display: flex;
         align-items: center;
         justify-content: center; }
-        @media (max-width: 1400px) {
+        @media (max-width: 900px) {
           .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer {
             display: none; } }
         .BaseTemplate .BigScreenNavigationBar .overAllContainer .middleContainer ul {
@@ -197,13 +197,13 @@
         justify-content: flex-end;
         color: black;
         gap: 2rem; }
-        @media (max-width: 1400px) {
+        @media (max-width: 900px) {
           .BaseTemplate .BigScreenNavigationBar .overAllContainer .userContainer {
             display: none; } }
       .BaseTemplate .BigScreenNavigationBar .overAllContainer .lastDiv {
         display: none;
         cursor: pointer; }
-        @media (max-width: 1400px) {
+        @media (max-width: 900px) {
           .BaseTemplate .BigScreenNavigationBar .overAllContainer .lastDiv {
             display: grid;
             justify-content: flex-end; } }
@@ -228,7 +228,7 @@
       align-items: center;
       justify-content: center;
       height: 100%; }
-      @media (max-width: 1400px) {
+      @media (max-width: 900px) {
         .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer {
           grid-template-columns: repeat(2, 1fr); } }
       .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .logoContainer {
@@ -246,7 +246,7 @@
         display: flex;
         align-items: center;
         justify-content: center; }
-        @media (max-width: 1400px) {
+        @media (max-width: 900px) {
           .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer {
             display: none; } }
         .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .middleContainer ul {
@@ -293,13 +293,13 @@
         justify-content: flex-end;
         color: white;
         gap: 2rem; }
-        @media (max-width: 1400px) {
+        @media (max-width: 900px) {
           .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .userContainer {
             display: none; } }
       .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .lastDiv {
         display: none;
         cursor: pointer; }
-        @media (max-width: 1400px) {
+        @media (max-width: 900px) {
           .BaseTemplate .BigScreenNavigationBarScroll .overAllContainer .lastDiv {
             display: grid;
             justify-content: flex-end; } }
@@ -412,7 +412,8 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        z-index: 1; }
+        z-index: 1;
+        margin: 3rem 0; }
         @media (max-width: 1400px) {
           .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle {
             margin: 5rem 0; } }
@@ -423,7 +424,7 @@
           transition: all .3s ease-in-out;
           grid-template-columns: repeat(2, 1fr);
           gap: 3rem; }
-          @media (max-width: 1400px) {
+          @media (max-width: 900px) {
             .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active {
               justify-content: center;
               grid-template-columns: 1fr; } }
@@ -431,7 +432,7 @@
             display: grid;
             gap: 1rem;
             margin-left: 10rem; }
-            @media (max-width: 1400px) {
+            @media (max-width: 900px) {
               .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up {
                 margin: 0 auto;
                 padding-left: 2rem;
@@ -439,9 +440,9 @@
             .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .small_title {
               text-align: left;
               font-size: 5rem; }
-              @media (max-width: 1400px) {
+              @media (max-width: 900px) {
                 .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .small_title {
-                  font-size: 1.5rem; } }
+                  font-size: 2rem; } }
               @media (max-width: 486px) {
                 .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .small_title {
                   margin-bottom: 1rem; } }
@@ -470,9 +471,18 @@
                 font-size: 5rem;
                 top: 40%;
                 z-index: 10; }
-                @media (max-width: 1400px) {
+                @media (max-width: 900px) {
                   .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style .slide_title {
-                    font-size: 2rem; } }
+                    font-size: 4rem; } }
+                @media (max-width: 468px) {
+                  .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style .slide_title {
+                    font-size: 10vw; } }
+                @media (max-width: 430px) {
+                  .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style .slide_title {
+                    font-size: 13vw; } }
+                @media (max-width: 324px) {
+                  .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .write_up .h2_style .slide_title {
+                    font-size: 16vw; } }
           .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .imgDiv {
             display: flex;
             align-items: center;
@@ -486,7 +496,7 @@
                 width: 30%;
                 height: 30%;
                 object-fit: cover; }
-                @media (max-width: 1400px) {
+                @media (max-width: 900px) {
                   .BaseTemplate .HomePageContent .HeroSectionContent .SliderContentStyle .active .imgDiv .intermediary .slide_image {
                     width: 20%;
                     height: 20%; } }
@@ -858,10 +868,35 @@
       .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem; }
+        gap: 2rem;
+        width: 100%;
+        position: relative;
+        padding: 4rem 0; }
         @media (max-width: 573px) {
           .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct {
             grid-template-columns: 1fr; } }
+        .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .bg {
+          position: absolute;
+          background-image: url(../images/logo/logo_basic.png);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+          height: 80%;
+          padding: 10rem 0;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: .07;
+          z-index: -2; }
+          @media (max-width: 1360px) {
+            .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .bg {
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              transform: translate(0%, 0%);
+              padding: 0; } }
         .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .productSide {
           width: 100%;
           display: grid;
@@ -875,16 +910,15 @@
               border-bottom: #b68d06 solid 5px;
               border-right: none; } }
           .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .productSide img {
-            width: 50%; }
+            width: 30%; }
             @media (max-width: 1400px) {
               .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .productSide img {
-                width: 80%; } }
-            @media (max-width: 1400px) {
-              .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .productSide img {
-                width: 80%; } }
+                width: 50%; } }
             @media (max-width: 700px) {
               .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .productSide img {
                 width: 100%; } }
+        .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .rightSideDescription .titl {
+          padding-bottom: 2rem; }
         .BaseTemplate .HomePageContent .ProductsSectionContent .startProduct .rightSideDescription .description .style_list {
           display: grid;
           gap: 1rem;
@@ -1070,6 +1104,20 @@
           @media (max-width: 430px) {
             .BaseTemplate .HomePageContent .ParalaxSectionContent .overLay::after {
               top: 10%; } }
+    .BaseTemplate .HomePageContent .CompensationSectionContent {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem; }
+      .BaseTemplate .HomePageContent .CompensationSectionContent .leftSidePic {
+        width: 100%; }
+        .BaseTemplate .HomePageContent .CompensationSectionContent .leftSidePic img {
+          width: 100%; }
+      .BaseTemplate .HomePageContent .CompensationSectionContent .rightSide {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        gap: 2rem; }
     .BaseTemplate .HomePageContent .PackagesSectionContent {
       background-color: blanchedalmond; }
     .BaseTemplate .HomePageContent .HowItWorksSectionContent {

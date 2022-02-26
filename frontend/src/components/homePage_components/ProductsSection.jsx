@@ -18,6 +18,7 @@ const ProductsSection = () => {
         </div>
 
         <div className="startProduct">
+          <div className="bg"></div>
           <div className="productSide">
             <img src={L_GLUTHATION_GINSENG2} alt="" srcset="" />
           </div>
